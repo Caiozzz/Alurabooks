@@ -1,0 +1,137 @@
+.carrossel__titulo {
+   background-color: var(--cor-fundo-destaque);
+   color: var(--cor-titulo);
+   font-size: 18px;
+   font-weight: 700;
+   text-align: center;
+   text-transform: uppercase;
+   padding: 1em 0 .5em;
+}
+
+.swiper {
+   padding: 0 10px;
+}
+
+.swiper-wrapper {
+   margin: 0.5em 0;
+}
+
+.swiper-slide img {
+   width: 100%;
+}
+
+.swiper-pagination {
+   position: initial;
+   margin: .5em 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+   display: none;
+}
+
+.card {
+   background: var(--cor-fundo-destaque);
+   border-radius: 10px;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   margin: 1em;
+   padding: 1em;
+}
+
+.card__descricao,
+.card__botoes {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   gap: 1em;
+}
+
+.card__botoes {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 1em;
+}
+
+.card__titulo {
+   color: var(--cor-titulo);
+   font-weight: 700;
+   line-height: 1.5;
+}
+
+.descricao__titulo {
+   color: var(--cor-subtitulo);
+   font-size: 18px;
+   font-weight: 700;
+   margin: .5em 0;
+}
+
+.descricao__texto {
+   font-size: 14px;
+   line-height: 1.5;
+}
+
+.botoes__lista {
+   display: flex;
+   gap: 1em;
+}
+
+.botoes__ancora {
+   background: var(--cor-titulo);
+   color: var(--cor-fundo-destaque);
+   font-weight: 700;
+   text-decoration: none;
+   padding: .8em 2.2em;
+}
+
+@media screen and (min-width: 1024px) {
+   .carrossel__titulo {
+      font-size: 26px;
+      padding: 1.5em 0 .5em;
+      line-height: 1.5;
+   }
+
+   .swiper-pagination {
+      margin: 2em 0;
+   }
+
+   .swiper {
+      width: 60%;
+   }
+
+   .swiper-button-prev,
+   .swiper-button-next {
+      display: block;
+      top: 60%;
+   }
+
+   .card {
+      width: 50%;
+      margin: 3.5em auto 3em;
+   }
+
+   .descricao__texto {
+      font-size: 16px;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   .carrossel-container{
+      display: flex;
+      align-items: center;
+      margin: 4em 10vw;
+      gap: 2em;
+   }
+   
+   .swiper-pagination {
+      margin: 0 0 1em;
+   }
+
+   .swiper {
+      width: 50%;
+   }
+
+   .card__titulo {
+      font-size: 26px;
+   }
+}
